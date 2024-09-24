@@ -1,0 +1,82 @@
+// @import '_variables.scss';
+
+// .aboutContainer {
+//     padding: 0 20px;
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+//     justify-content: center;
+//     gap: 30px;
+//     &__title {
+//         @include title;
+//         position: relative;
+//         z-index: 1;
+//         border-bottom: 2px solid $primary-color;
+//         padding-bottom: 40px;
+//     }
+//     &__subtitle {
+//         position: absolute;
+//         right: 0;
+//         left: 0;
+//         top: -10px;
+//         font-size: 2.5rem;
+//         font-weight: 700;
+//         z-index: 0;
+//         opacity: 0.16;
+//         background-color: $dark-background-color;
+//         color: $secondary-color;
+//         width: 100%;
+//         text-transform: uppercase;
+//     }
+//     &__text {
+//         @include aboutText;
+//     }
+// }
+
+@import '_variables.scss';
+
+.aboutContainer {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+
+    &__title {
+        @include title;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 40px;
+        &::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 2px;
+            background-color: $primary-color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
+
+    &__subtitle {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -10px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        z-index: 0;
+        opacity: 0.16;
+        background-color: $dark-background-color;
+        color: $secondary-color;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @include aboutText;
+    }
+}

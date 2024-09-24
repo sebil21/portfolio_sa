@@ -18,7 +18,7 @@ export default function Header() {
             <nav className={`header__menu ${isMenuOpen ? 'open' : ''}`}>
                 <ul className="header__navbar">
                     <li>
-                        <a href="#about">À PROPOS</a>
+                        <a href="#about">PRÉSENTATION</a>
                     </li>
                     <li>
                         <a href="#projects">RÉALISATIONS</a>
