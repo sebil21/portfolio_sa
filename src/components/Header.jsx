@@ -1,8 +1,56 @@
+// import { useState } from 'react';
+// import '../styles/_header.scss';
+
+// export default function Header() {
+//     const [isMenuOpen, setMenuOpen] = useState(false);
+
+//     return (
+//         <header className="header">
+//             <div className="header__title">
+//                 <h1>SEBIL ALAGOZ</h1>
+//             </div>
+//             <i
+//                 className={`header__hamburger fa-solid fa-bars ${
+//                     isMenuOpen ? 'open' : ''
+//                 }`}
+//                 onClick={() => setMenuOpen(!isMenuOpen)}
+//             ></i>
+//             <nav className={`header__menu ${isMenuOpen ? 'open' : ''}`}>
+//                 <ul className="header__navbar">
+//                     <li>
+//                         <a href="#about">PRÉSENTATION</a>
+//                     </li>
+//                     <li>
+//                         <a href="#projects">RÉALISATIONS</a>
+//                     </li>
+//                     <li>
+//                         <a href="#skills">COMPÉTENCES</a>
+//                     </li>
+//                     <li>
+//                         <a href="#resume">CV</a>
+//                     </li>
+//                     <li>
+//                         <a href="#contact">CONTACT</a>
+//                     </li>
+//                 </ul>
+//             </nav>
+//         </header>
+//     );
+// }
+
 import { useState } from 'react';
 import '../styles/_header.scss';
 
 export default function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const handleMenuToggle = () => {
+        setMenuOpen(!isMenuOpen);
+    };
+
+    const handleMenuItemClick = () => {
+        setMenuOpen(false); // Fermer le menu lorsque l'élément est cliqué
+    };
 
     return (
         <header className="header">
@@ -10,27 +58,37 @@ export default function Header() {
                 <h1>SEBIL ALAGOZ</h1>
             </div>
             <i
-                className={`header__hamburger fa-solid fa-bars ${
-                    isMenuOpen ? 'open' : ''
+                className={`header__hamburger fa-solid ${
+                    isMenuOpen ? 'fa-xmark' : 'fa-bars'
                 }`}
-                onClick={() => setMenuOpen(!isMenuOpen)}
+                onClick={handleMenuToggle}
             ></i>
             <nav className={`header__menu ${isMenuOpen ? 'open' : ''}`}>
                 <ul className="header__navbar">
                     <li>
-                        <a href="#about">PRÉSENTATION</a>
+                        <a href="#about" onClick={handleMenuItemClick}>
+                            PRÉSENTATION
+                        </a>
                     </li>
                     <li>
-                        <a href="#projects">RÉALISATIONS</a>
+                        <a href="#projects" onClick={handleMenuItemClick}>
+                            RÉALISATIONS
+                        </a>
                     </li>
                     <li>
-                        <a href="#skills">COMPÉTENCES</a>
+                        <a href="#skills" onClick={handleMenuItemClick}>
+                            COMPÉTENCES
+                        </a>
                     </li>
                     <li>
-                        <a href="#resume">CV</a>
+                        <a href="#resume" onClick={handleMenuItemClick}>
+                            CV
+                        </a>
                     </li>
                     <li>
-                        <a href="#contact">CONTACT</a>
+                        <a href="#contact" onClick={handleMenuItemClick}>
+                            CONTACT
+                        </a>
                     </li>
                 </ul>
             </nav>
