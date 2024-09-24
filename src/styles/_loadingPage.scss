@@ -1,1 +1,50 @@
 @import '_variables.scss';
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-background-color;
+    z-index: 9999;
+    opacity: 1;
+    animation: fadeOut 3s forwards 3s;
+
+    p {
+        @include loadingPage;
+        position: relative;
+        opacity: 0;
+        animation: slideInThenOut 3s ease-in-out;
+        background-color: $dark-background-color;
+    }
+}
+
+@keyframes slideInThenOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
