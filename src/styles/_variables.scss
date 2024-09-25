@@ -37,7 +37,8 @@ $dark-background-color: #dbccc1;
 }
 
 @mixin footerIcon {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
+    color: $primary-color;
 }
 
 @mixin text {
@@ -59,5 +60,56 @@ $dark-background-color: #dbccc1;
     letter-spacing: 3px;
     @media (min-width: 769px) {
         font-size: 1.5rem;
+    }
+}
+
+@mixin overlayText {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: $tertiary-color;
+    @media (min-width: 769px) {
+        font-size: 2.5rem;
+    }
+}
+
+@mixin modalTitle {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: $secondary-color;
+    @media (min-width: 769px) {
+        font-size: 2.5rem;
+    }
+}
+
+@mixin modalSubtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    @media (min-width: 769px) {
+        font-size: 1.75rem;
+    }
+}
+
+@mixin modalText {
+    font-size: 1rem;
+    font-weight: 400;
+    // letter-spacing: 3px;
+    @media (min-width: 769px) {
+        font-size: 1.75rem;
+    }
+}
+
+@mixin modalLink {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: $tertiary-color;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    @media (min-width: 769px) {
+        font-size: 1.75rem;
     }
 }

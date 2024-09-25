@@ -1,0 +1,146 @@
+@import '_variables.scss';
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: $dark-background-color;
+    margin-top: 100px;
+    padding: 30px 20px;
+
+    &__title {
+        @include title;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 40px;
+        background-color: $dark-background-color;
+        text-align: center;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 2px;
+            background-color: $primary-color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
+    &__item {
+        position: relative;
+        width: 100%;
+        height: 240px;
+
+        .gallery__cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            flex-direction: column;
+
+            h3 {
+                margin-bottom: 10px;
+                @include overlayText;
+            }
+
+            button {
+                background-color: $dark-background-color; // Couleur du fond du bouton
+                color: $primary-color; // Couleur du texte du bouton (contraste)
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                border-radius: 8px; // Ajout du border-radius
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken(#fffbf7, 5%);
+                }
+            }
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+        }
+    }
+}
+
+//modal
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    &__content {
+        background-color: $light-background-color;
+        padding: 20px;
+        border-radius: 8px;
+        width: 380px;
+        max-height: 95%;
+        overflow-y: auto;
+        position: relative;
+        h4 {
+            @include modalTitle;
+            text-align: center;
+        }
+    }
+
+    .fa-xmark {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 1.75rem;
+    }
+    .modalText {
+        padding-top: 15px;
+        padding-bottom: 30px;
+        border-top: 2px solid $secondary-color;
+        h5 {
+            @include modalSubtitle;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            @include modalText;
+        }
+        p {
+            @include modalText;
+        }
+    }
+    .modalLinkButton {
+        display: flex;
+        justify-content: center;
+        a {
+            background-color: $primary-color;
+            @include modalLink;
+
+            &:hover {
+                background-color: lighten($primary-color, 7%);
+            }
+        }
+    }
+}

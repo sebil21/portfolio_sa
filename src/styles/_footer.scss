@@ -10,20 +10,19 @@
     &__icons {
         display: flex;
         gap: 20px;
-        background-color: $dark-background-color;
+        color: $tertiary-color;
     }
     &__link {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         border: 2px solid #435058;
         @include footerIcon;
     }
     &__text {
         @include text;
-        background-color: $dark-background-color;
     }
 }
