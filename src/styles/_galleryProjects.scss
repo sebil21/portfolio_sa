@@ -9,8 +9,9 @@
     gap: 30px;
     background-color: $dark-background-color;
     margin-top: 100px;
-    padding-top: 30px;
+    // padding-top: 30px;
     border-radius: 30px;
+    padding: 20px;
     &__title {
         @include title;
         position: relative;
@@ -36,27 +37,39 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 40px;
         justify-content: center;
+
         // padding-top: 15px;
-        padding: 20px;
+        // padding: 20px;
         width: 100%;
+        // align-items: center;
+    }
+    h3 {
+        margin-bottom: 10px;
+        @include cardTitle;
+        text-align: center;
     }
 
     &__card {
+        // padding: 20px;
         position: relative;
-        // width: 100%;
-        height: 240px;
+        width: 350px;
+        // height: 240px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
         border-radius: 15px;
+        height: auto;
+        background-color: $light-background-color;
+
         &:hover .overlay {
             opacity: 1;
         }
         .gallery__cover {
-            width: auto;
-            height: 240px;
-            border-radius: 15px;
+            width: 100%;
+            // height: 240px;
+            border-radius: 15px 15px 0 0;
             object-fit: cover;
+            border-bottom: 2px solid $dark-background-color;
         }
     }
     .overlay {
@@ -73,11 +86,6 @@
         transition: opacity 0.3s ease;
         border-radius: 15px;
         flex-direction: column;
-
-        h3 {
-            margin-bottom: 10px;
-            @include overlayText;
-        }
 
         button {
             background-color: $dark-background-color;

@@ -28,8 +28,9 @@ export default function Gallery() {
                             alt={project.title}
                             className="gallery__cover"
                         />
+                        <h3>{project.title}</h3>
                         <div className="overlay">
-                            <h3>{project.title}</h3>
+                            {/* <h3>{project.title}</h3> */}
                             <button onClick={() => setSelectedProject(project)}>
                                 + d'infos
                             </button>

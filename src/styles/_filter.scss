@@ -35,16 +35,19 @@
         &.open {
             display: block;
             max-height: 200px;
+            box-shadow: 0px 16px 15px -3px #dfd3ca;
         }
     }
     &__category {
-        background: none;
+        background: $light-background-color;
         border: none;
         padding: 10px;
         text-align: left;
         width: 100%;
         cursor: pointer;
+        transition: all 0.6s ease;
         @include filterCategory;
+        // text-align: center;
 
         &:hover {
             background-color: $dark-background-color;
