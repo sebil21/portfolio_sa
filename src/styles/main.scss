@@ -5,6 +5,8 @@ html {
     scroll-behavior: smooth;
     background-color: $light-background-color;
     color: $primary-color;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 * {
