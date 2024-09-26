@@ -70,7 +70,7 @@ $dark-background-color: #dbccc1;
     letter-spacing: 3px;
     color: $tertiary-color;
     @media (min-width: 769px) {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -113,4 +113,18 @@ $dark-background-color: #dbccc1;
     @media (min-width: 769px) {
         font-size: 1.75rem;
     }
+}
+
+@mixin filterButton {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    background-color: $primary-color;
+    color: $tertiary-color;
+}
+
+@mixin filterCategory {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
