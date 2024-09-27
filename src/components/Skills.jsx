@@ -4,7 +4,7 @@ import skills from '../data/SkillsList';
 const Skills = () => {
     return (
         <div id="skills" className="skills">
-            <h2 className="skills__title">COMPÉTENCES WEB</h2>
+            <h2 className="skills__title">COMPÉTENCES</h2>
             <div className="skills__container">
                 {skills.map((skill, index) => (
                     <div key={index} className="skills__card">
