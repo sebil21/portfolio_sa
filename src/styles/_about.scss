@@ -1,17 +1,27 @@
 @import '_variables.scss';
 
-.aboutContainer {
-    padding: 0 20px;
+.profile-about-container {
+    padding: 30px 20px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column; //mettre en row pour tablette et pc
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    // text-align: center;
     gap: 30px;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
     &__title {
         @include title;
         position: relative;
         z-index: 1;
         padding-bottom: 40px;
+        margin-bottom: 40px;
         &::after {
             content: '';
             display: block;
@@ -29,7 +39,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: center;
         gap: 40px;
+        line-height: 2;
     }
 }

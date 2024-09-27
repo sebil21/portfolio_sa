@@ -1,13 +1,23 @@
 @import '_variables.scss';
 
 .profil-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 20px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    text-align: center;
 
     img {
-        width: 70%;
+        width: 60%;
         opacity: 0.6;
+        animation: spin 5s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
     }
 }

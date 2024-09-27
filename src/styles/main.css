@@ -3,6 +3,8 @@ html {
   scroll-behavior: smooth;
   background-color: #fffbf7;
   color: #435058;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {
