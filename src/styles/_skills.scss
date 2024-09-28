@@ -7,6 +7,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    @include skills;
 
     &__title {
         margin-bottom: 20px;
@@ -27,25 +28,31 @@
     }
 
     &__container {
-        margin-top: 30px;
+        margin-top: 20px;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 40px;
+        width: 100%;
     }
 
     &__card {
-        background-color: $light-background-color;
-        border: 1px solid $dark-background-color;
-        border-radius: 10px;
-        padding: 15px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-        cursor: pointer;
-        @include skills;
+        display: flex;
+        flex-direction: column;
+    }
 
-        &:hover {
-            transform: translateY(-3px);
-        }
+    &__subtitle {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        color: $secondary-color;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
