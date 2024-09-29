@@ -1,5 +1,6 @@
 import '../styles/_resume.scss';
 import { resume } from '../data/ResumeInfo';
+import ButtonCV from '../components/Cv';
 
 export default function Resume() {
     const sortedResume = resume.sort((a, b) => {
@@ -8,21 +9,43 @@ export default function Resume() {
 
     return (
         <div className="resume">
-            {sortedResume.map((job, index) => (
-                <div key={index} className="resume__card">
-                    <div className="resume__cover">
-                        <img src={job.cover} alt={`${job.companyName} logo`} />
-                    </div>
-                    <div className="resume__contain">
-                        <h3 className="resume__title">{job.companyName}</h3>
-                        <div className="resume__info">
-                            <p className="resume__location">{job.location}</p>
-                            <p className="resume__dates">{job.date}</p>
+            <h2 id="resume" className="resume__title">
+                PARCOURS
+            </h2>
+            <div className="resume__container">
+                {sortedResume.map((job, index) => (
+                    <div key={index} className="resume__card">
+                        <img src={job.cover} alt={job.companyName} />
+                        <div>
+                            <h3 className="resume__companyName">
+                                {job.companyName}
+                            </h3>
+                            <div className="resume__info">
+                                <p className="resume__location">
+                                    {job.location}
+                                </p>
+                                <p className="resume__dates">{job.date}</p>
+                            </div>
+                            <ul className="resume__jobTitle">
+                                {job.jobTitle.map((title, idx) => (
+                                    <li key={idx}>{title}</li>
+                                ))}
+                            </ul>
                         </div>
-                        <p className="resume__jobTitle">{job.jobTitle}</p>
                     </div>
+                ))}
+                <div className="resume__transitionCV">
+                    <p>
+                        Avant de commencer ma carrière en tant qu'acheteur, j'ai
+                        acquis diverses expériences, y compris des stages, entre
+                        2010 et 2014. Ces expériences m'ont permis de développer
+                        diverses compétences. Si vous souhaitez en savoir plus
+                        sur mon parcours, je vous invite à télécharger mon CV en
+                        cliquant sur le bouton ci-dessous.
+                    </p>
+                    <ButtonCV />
                 </div>
-            ))}
+            </div>
         </div>
     );
 }

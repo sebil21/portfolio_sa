@@ -1,8 +1,114 @@
 @import '_variables.scss';
 
 .resume {
-    &__cover img {
-        width: 10%;
-        height: 10%;
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    &__title {
+        margin-bottom: 20px;
+        @include title;
+        position: relative;
+        padding-bottom: 40px;
+        &::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 2px;
+            background-color: $primary-color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 50px;
+
+        & li {
+            list-style: none;
+        }
+
+        & img {
+            position: absolute;
+            top: -25%;
+            left: 63%;
+            right: 0;
+            bottom: 0;
+            width: 40%;
+            opacity: 0.5;
+        }
+    }
+    &__card {
+        position: relative;
+        // border: 2px solid black;
+        z-index: -1;
+        //rajouter width pour tablette et pc
+    }
+    &__companyName {
+        @include resumeCompanyName;
+    }
+    &__info {
+        margin: 5px 0 5px 0;
+        @include resumeInfo;
+    }
+    &__jobTitle {
+        margin-top: 5px;
+        @include resumeJobTitle;
+    }
+    &__transitionCV {
+        @include resumeCVText;
+        margin-top: 20px;
+        padding: 40px;
+        background: linear-gradient(
+            to top left,
+            $light-background-color,
+            rgba($dark-background-color, 0.3)
+        );
+        line-height: 2;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 15%;
+            border-top: 5px solid $dark-background-color;
+            border-left: 5px solid $dark-background-color;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 10%;
+            height: 15%;
+            border-bottom: 5px solid $dark-background-color;
+            border-right: 5px solid $dark-background-color;
+        }
+    }
+
+    &__buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+    &__buttonCV {
+        margin-top: 40px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: $dark-background-color;
+        cursor: pointer;
+        color: $primary-color;
+        @include resumeButtonCV;
     }
 }
