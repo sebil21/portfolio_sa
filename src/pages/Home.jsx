@@ -2,6 +2,7 @@
 import AboutInfo from '../data/AboutInfo';
 import Gallery from '../components/Gallery';
 import Skills from '../components/Skills';
+import Resume from '../components/Resume';
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <AboutInfo />
             <Gallery />
             <Skills />
+            <Resume />
         </div>
     );
 }

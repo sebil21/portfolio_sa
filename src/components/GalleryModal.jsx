@@ -38,5 +38,3 @@ export default function GalleryModal({ selectedProject, setSelectedProject }) {
         </div>
     );
 }
-
-// export default GalleryModal;
