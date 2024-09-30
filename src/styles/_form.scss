@@ -71,12 +71,17 @@
         justify-content: center;
 
         &:hover {
-            background-color: darken($primary-color, 5%);
+            background-color: lighten($primary-color, 5%);
         }
     }
     &__feedback {
         &--success {
             color: green;
+            @include formErrorSuccessMsg;
+            margin-top: 20px;
+        }
+        &--error {
+            color: red;
             @include formErrorSuccessMsg;
             margin-top: 20px;
         }

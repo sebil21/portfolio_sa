@@ -1,5 +1,6 @@
 import '../styles/_form.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import emailJS from '@emailjs/browser';
 
 export default function Form() {
     const [name, setName] = useState('');
@@ -7,6 +8,31 @@ export default function Form() {
     const [message, setMessage] = useState('');
     const [feedback, setFeedback] = useState('');
     const [feedbackType, setFeedbackType] = useState('');
+
+    useEffect(() => {
+        emailJS.init('S4O1Ec3hfllAjtCmd');
+    }, []);
+
+    const SendMail = (templateParams) => {
+        emailJS
+            .send('service_360nvjx', 'template_oicrlvg', templateParams)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                setFeedback('Votre message a bien été envoyé');
+                setFeedbackType('success');
+                setTimeout(() => {
+                    setFeedback('');
+                }, 10000);
+            })
+            .catch((error) => {
+                console.error("Échec de l'envoi:", error);
+                setFeedback('Une erreur est survenue, veuillez réessayer');
+                setFeedbackType('error');
+                setTimeout(() => {
+                    setFeedback('');
+                }, 10000);
+            });
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,15 +43,20 @@ export default function Form() {
             return;
         }
 
-        setTimeout(() => {
-            if (message) {
-                setFeedback('Votre message a bien été envoyé');
-                setFeedbackType('success');
-                setName('');
-                setEmail('');
-                setMessage('');
-            }
-        }, 1000);
+        // Paramètres à envoyer avec EmailJS
+        const templateParams = {
+            from_name: name,
+            email: email,
+            message: message,
+        };
+
+        // Appel de la fonction SendMail pour envoyer l'email
+        SendMail(templateParams);
+
+        // Réinitialisation des champs
+        setName('');
+        setEmail('');
+        setMessage('');
     };
 
     return (
@@ -64,8 +95,10 @@ export default function Form() {
                 <button type="submit" className="form__button">
                     Envoyer
                 </button>
-                {feedbackType === 'success' && (
-                    <p className="form__feedback form__feedback--success">
+                {feedback && (
+                    <p
+                        className={`form__feedback form__feedback--${feedbackType}`}
+                    >
                         {feedback}
                     </p>
                 )}
