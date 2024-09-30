@@ -39,8 +39,19 @@ const resume = [
 
 const education = [
     {
-        title: 'Développeur Web',
+        title: 'Intégrateur Web',
         date: '2024',
+        location: 'OpenClassRooms',
+    },
+    {
+        title: "Formation Pratique à l'Achat",
+        date: '2019',
+        location: 'Cegos, Paris (75)',
+    },
+    {
+        title: 'BTS Commerce International',
+        date: '2011',
+        location: 'Lycée Les Arcades, Dijon (21)',
     },
 ];
 

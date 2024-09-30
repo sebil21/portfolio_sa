@@ -1,5 +1,5 @@
 // VARIABLES
-$primary-color: #435058;
+$primary-color: #3f3f61;
 $secondary-color: #978370;
 $tertiary-color: #fffbf7;
 $light-background-color: #fffbf7;
@@ -56,7 +56,7 @@ $dark-background-color: #dbccc1;
 }
 
 @mixin aboutText {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
     @media (min-width: 769px) {
@@ -68,7 +68,7 @@ $dark-background-color: #dbccc1;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
-    color: $primary-color;
+    color: $tertiary-color;
 }
 
 @mixin modalTitle {
@@ -76,40 +76,40 @@ $dark-background-color: #dbccc1;
     font-weight: 500;
     letter-spacing: 3px;
     color: $secondary-color;
-    @media (min-width: 769px) {
-        font-size: 2.5rem;
-    }
+    // @media (min-width: 769px) {
+    //     font-size: 1.75rem;
+    // }
 }
 
 @mixin modalSubtitle {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
-    @media (min-width: 769px) {
-        font-size: 1.75rem;
-    }
+    // @media (min-width: 769px) {
+    //     font-size: 1.2rem;
+    // }
 }
 
 @mixin modalText {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
     // letter-spacing: 3px;
-    @media (min-width: 769px) {
-        font-size: 1.75rem;
-    }
+    // @media (min-width: 769px) {
+    //     font-size: 1rem;
+    // }
 }
 
 @mixin modalLink {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
     color: $tertiary-color;
     text-decoration: none;
     border-radius: 25px;
     padding: 10px 30px;
-    @media (min-width: 769px) {
-        font-size: 1.75rem;
-    }
+    // @media (min-width: 769px) {
+    //     font-size: 1.75rem;
+    // }
 }
 
 @mixin filterButton {
@@ -132,8 +132,8 @@ $dark-background-color: #dbccc1;
     letter-spacing: 3px;
 }
 
-@mixin resumeCompanyName {
-    font-size: 1.2rem;
+@mixin resumeName {
+    font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 3px;
     color: $secondary-color;
@@ -156,12 +156,18 @@ $dark-background-color: #dbccc1;
     font-weight: 400;
     letter-spacing: 3px;
     @media (min-width: 769px) {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 }
 
 @mixin resumeButtonCV {
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+@mixin educationLocation {
+    font-size: 0.7rem;
+    font-weight: 500;
     letter-spacing: 3px;
 }

@@ -1,6 +1,7 @@
 import '../styles/_resume.scss';
 import { resume } from '../data/ResumeInfo';
 import ButtonCV from '../components/Cv';
+import Education from '../components/Education';
 
 export default function Resume() {
     const sortedResume = resume.sort((a, b) => {
@@ -34,6 +35,9 @@ export default function Resume() {
                         </div>
                     </div>
                 ))}
+                <div>
+                    <Education />
+                </div>
                 <div className="resume__transitionCV">
                     <p>
                         Avant de commencer ma carrière en tant qu'acheteur, j'ai
