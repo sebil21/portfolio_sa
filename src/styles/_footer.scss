@@ -1,5 +1,12 @@
 @import '_variables.scss';
 
+.footerImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+}
 .footer {
     display: flex;
     flex-direction: column;

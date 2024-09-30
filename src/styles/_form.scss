@@ -1,0 +1,84 @@
+@import '_variables.scss';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    align-items: center;
+
+    &__title {
+        @include title;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 40px;
+        text-align: center;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: $primary-color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    &__label {
+        @include formLabel;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    input,
+    .form__textarea {
+        @include formInputText;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+
+        &:focus {
+            border-color: $dark-background-color;
+            outline: none;
+        }
+    }
+    &__textarea {
+        resize: vertical;
+        height: 100px;
+    }
+
+    &__button {
+        @include formButton;
+        padding: 8px;
+        width: 40%;
+        border: none;
+        border-radius: 4px;
+        background-color: $primary-color;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            background-color: darken($primary-color, 5%);
+        }
+    }
+    &__feedback {
+        &--success {
+            color: green;
+            @include formErrorSuccessMsg;
+            margin-top: 20px;
+        }
+    }
+}

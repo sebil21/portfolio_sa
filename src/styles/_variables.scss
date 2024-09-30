@@ -171,3 +171,27 @@ $dark-background-color: #dbccc1;
     font-weight: 500;
     letter-spacing: 3px;
 }
+
+@mixin formLabel {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+@mixin formInputText {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@mixin formButton {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: $tertiary-color;
+}
+
+@mixin formErrorSuccessMsg {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}

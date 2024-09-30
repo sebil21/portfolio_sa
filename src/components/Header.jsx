@@ -42,7 +42,7 @@ export default function Header() {
                     </li>
                     <li>
                         <a href="#resume" onClick={handleMenuItemClick}>
-                            CV
+                            PARCOURS
                         </a>
                     </li>
                     <li>
