@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/_header.scss';
+import LogoHeader from '../assets/images/logoHeader.webp';
 
 export default function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -14,8 +15,15 @@ export default function Header() {
 
     return (
         <header className="header">
-            <div className="header__title">
+            {/* <div className="header__title">
                 <h1>SEBIL ALAGOZ</h1>
+            </div> */}
+            <div className="header__logo">
+                <img
+                    src={LogoHeader}
+                    alt="Logo Sebil Alagoz"
+                    className="header__logo-img"
+                />
             </div>
             <i
                 className={`header__hamburger fa-solid ${

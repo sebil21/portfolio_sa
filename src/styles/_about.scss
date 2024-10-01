@@ -1,14 +1,23 @@
 @import '_variables.scss';
 
-.profile-about-container {
+.about-container {
     padding: 30px 20px;
-    display: flex;
-    flex-direction: column; //mettre en row pour tablette et pc
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column; //mettre en row pour tablette et pc
+    // flex-wrap: nowrap;
+    // align-items: center;
+    // justify-content: space-between;
     // text-align: center;
-    gap: 30px;
+    // gap: 30px;
+    &__main {
+        @include mainTitleText;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    h1 {
+        @include mainTitle;
+        display: inline;
+    }
 }
 
 .aboutContainer {
@@ -38,7 +47,6 @@
         @include aboutText;
         display: flex;
         flex-direction: column;
-        text-align: center;
         gap: 40px;
         line-height: 2;
     }

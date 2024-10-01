@@ -20,15 +20,17 @@ const Skills = () => {
                 ))}
             </div>
             <p className="skills__description">
-                Au cours de mes années d'expérience dans le secteur industriel,
-                notamment dans la mise en place de systèmes ERP, j'ai acquis une
-                solide compréhension des besoins des utilisateurs et des
-                clients. J'ai formé ces derniers sur de nouveaux outils, tout en
-                leur fournissant un manuel d'utilisation complet que j'ai
-                moi-même élaboré. J'ai également supervisé des phases de tests
-                impliquant divers scénarios, en collaboration avec différents
-                services, tout en mettant en œuvre une démarche d'amélioration
-                continue pour les projets.
+                Au cours de mes années d'expérience dans le{' '}
+                <span>secteur industriel</span>, notamment dans la mise en place
+                de <span>systèmes ERP</span>, j'ai acquis une solide
+                compréhension des besoins des utilisateurs et des clients. J'ai
+                formé ces derniers sur de nouveaux outils, tout en leur
+                fournissant un manuel d'utilisation complet que j'ai moi-même
+                élaboré. J'ai également supervisé des{' '}
+                <span>phases de tests</span> impliquant divers scénarios, en
+                collaboration avec différents services, tout en mettant en œuvre
+                une démarche d'
+                <span>amélioration continue</span> pour les projets.
             </p>
         </div>
     );

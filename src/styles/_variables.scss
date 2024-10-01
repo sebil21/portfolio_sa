@@ -1,5 +1,5 @@
 // VARIABLES
-$primary-color: #3f3f61;
+$primary-color: #2c2c43;
 $secondary-color: #978370;
 $tertiary-color: #fffbf7;
 $light-background-color: #fffbf7;
@@ -14,14 +14,14 @@ $dark-background-color: #dbccc1;
         font-size: 1.5rem;
     }
 }
-@mixin headerTitle {
-    font-size: 0.75rem;
-    font-weight: 300;
-    letter-spacing: 3px;
-    @media (min-width: 769px) {
-        font-size: 1rem;
-    }
-}
+// @mixin headerTitle {
+//     font-size: 0.75rem;
+//     font-weight: 300;
+//     letter-spacing: 3px;
+//     @media (min-width: 769px) {
+//         font-size: 1rem;
+//     }
+// }
 
 @mixin menuBurger {
     font-size: 1.7rem;
@@ -46,6 +46,24 @@ $dark-background-color: #dbccc1;
     font-size: 1rem;
 }
 
+@mixin mainTitleText {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    @media (min-width: 769px) {
+        font-size: 1rem;
+    }
+}
+@mixin mainTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 3px;
+    @media (min-width: 769px) {
+        font-size: 1.2rem;
+    }
+}
+
 @mixin title {
     font-size: 1.75rem;
     font-weight: 300;
@@ -59,8 +77,13 @@ $dark-background-color: #dbccc1;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
+    span {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
     @media (min-width: 769px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -130,6 +153,11 @@ $dark-background-color: #dbccc1;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
+    span {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
 }
 
 @mixin resumeName {
