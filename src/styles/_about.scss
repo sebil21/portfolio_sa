@@ -1,40 +1,29 @@
 @import '_variables.scss';
 
-.about-container {
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 30px 20px;
-    // display: flex;
-    // flex-direction: column; //mettre en row pour tablette et pc
-    // flex-wrap: nowrap;
-    // align-items: center;
-    // justify-content: space-between;
-    // text-align: center;
-    // gap: 30px;
     &__main {
         @include mainTitleText;
         margin-top: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
     h1 {
         @include mainTitle;
         display: inline;
     }
-}
-
-.aboutContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
     &__title {
         @include title;
+        text-align: center;
         position: relative;
-        z-index: 1;
-        padding-bottom: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        padding-bottom: 30px;
         &::after {
             content: '';
             display: block;
-            width: 40%;
+            width: 80px;
             height: 2px;
             background-color: $primary-color;
             position: absolute;

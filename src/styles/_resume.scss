@@ -12,11 +12,11 @@
         margin-bottom: 20px;
         @include title;
         position: relative;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         &::after {
             content: '';
             display: block;
-            width: 50%;
+            width: 80px;
             height: 2px;
             background-color: $primary-color;
             position: absolute;
@@ -105,14 +105,14 @@
         margin-top: 40px;
         padding: 8px;
         border-radius: 8px;
-        background-color: $dark-background-color;
+        background-color: $primary-color;
         cursor: pointer;
         color: $primary-color;
         @include resumeButtonCV;
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: darken(#fffbf7, 5%);
+            background-color: lighten($primary-color, 15%);
         }
     }
 }
@@ -166,4 +166,13 @@
         margin-top: 5px;
         @include educationLocation;
     }
+}
+
+// RESPONSIVE
+@media (min-width: 768px) {
+    // .resume {
+    //     &__container {
+    //         align-items: center;
+    //     }
+    // }
 }

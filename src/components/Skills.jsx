@@ -1,7 +1,7 @@
 import '../styles/_skills.scss';
 import skills from '../data/SkillsList';
 
-const Skills = () => {
+export default function Skills() {
     return (
         <div id="skills" className="skills">
             <h2 className="skills__title">COMPÉTENCES</h2>
@@ -34,6 +34,4 @@ const Skills = () => {
             </p>
         </div>
     );
-};
-
-export default Skills;
+}

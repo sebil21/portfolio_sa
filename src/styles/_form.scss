@@ -11,13 +11,13 @@
         @include title;
         position: relative;
         z-index: 1;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         text-align: center;
 
         &::after {
             content: '';
             display: block;
-            width: 50%;
+            width: 80px;
             height: 2px;
             background-color: $primary-color;
             position: absolute;

@@ -6,15 +6,11 @@
     align-items: center;
     padding: 20px 20px 0 20px;
     position: relative;
-    // &__title {
-    //     @include headerTitle;
-    // }
     &__logo img {
-        width: 60%;
+        width: 50%;
     }
     &__hamburger {
         margin-top: -15px;
-        background: none;
         border: none;
         cursor: pointer;
         @include menuBurger;
@@ -38,7 +34,7 @@
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        // width: 100%;
+        width: 100%;
     }
     a {
         width: 100%;
@@ -56,4 +52,23 @@
     }
 }
 
-// rajouter une className active sur les liens lorsque je me trouve dans la section concernée
+// RESPONSIVE
+
+@media (min-width: 768px) {
+    .header {
+        &__hamburger {
+            display: none;
+        }
+        &__menu {
+            position: static;
+            max-height: none;
+            box-shadow: none;
+            display: flex;
+        }
+        &__navbar {
+            flex-direction: row;
+            width: auto; // Pour qu'il prenne l'espace nécessaire
+            justify-content: space-around;
+        }
+    }
+}
