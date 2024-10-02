@@ -32,9 +32,6 @@ $dark-background-color: #dbccc1;
     font-weight: 400;
     letter-spacing: 3px;
     color: inherit;
-    @media (min-width: 769px) {
-        font-size: 1rem;
-    }
 }
 
 @mixin footerIcon {
@@ -50,8 +47,9 @@ $dark-background-color: #dbccc1;
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
+    line-height: 2;
     @media (min-width: 769px) {
-        font-size: 1rem;
+        // font-size: 1rem;
     }
 }
 @mixin mainTitle {
@@ -65,18 +63,16 @@ $dark-background-color: #dbccc1;
 }
 
 @mixin title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 3px;
-    @media (min-width: 769px) {
-        font-size: 1.5rem;
-    }
 }
 
 @mixin aboutText {
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
+    line-height: 2;
     span {
         font-style: italic;
         font-weight: 700;

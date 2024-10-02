@@ -6,8 +6,12 @@
     align-items: center;
     padding: 20px 20px 0 20px;
     position: relative;
-    &__logo img {
-        width: 50%;
+    width: 100%;
+    &__logo {
+        width: 250px;
+        & img {
+            width: 100%;
+        }
     }
     &__hamburger {
         margin-top: -15px;
@@ -19,7 +23,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 100%; //mettre width none en media query
         z-index: 10;
         overflow: hidden;
         transition: max-height 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
