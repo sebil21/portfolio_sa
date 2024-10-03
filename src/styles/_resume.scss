@@ -29,29 +29,21 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         flex-wrap: wrap;
-        position: relative;
         gap: 50px;
 
         & li {
             list-style: none;
         }
-
-        & img {
-            position: absolute;
-            top: -25%;
-            left: 63%;
-            right: 0;
-            bottom: 0;
-            width: 130px;
-            height: 0 auto;
-            opacity: 0.5;
-        }
     }
     &__card {
-        position: relative;
-        z-index: -1;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 100px;
+        }
     }
     &__companyName {
         @include resumeName;
@@ -144,7 +136,7 @@
         }
     }
     &__container {
-        width: 100%;
+        // width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -152,9 +144,6 @@
         position: relative;
         gap: 50px;
     }
-    // &__card {
-    //     position: relative;
-    // }
     &__jobTitle {
         @include resumeName;
     }
@@ -169,10 +158,31 @@
 }
 
 // RESPONSIVE
-@media (min-width: 768px) {
-    // .resume {
-    //     &__container {
-    //         align-items: center;
-    //     }
-    // }
+@media screen and (min-width: 768px) {
+    .resume {
+        gap: 80px;
+        // align-items: center;
+
+        &__container {
+            gap: 80px;
+        }
+        &__card {
+            gap: 50px;
+        }
+
+        img {
+            width: 100px;
+        }
+    }
+    .education {
+        margin-top: 80px;
+        gap: 60px;
+        &__container {
+            text-align: center;
+            gap: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
 }
