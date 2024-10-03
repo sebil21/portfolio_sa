@@ -1,13 +1,14 @@
 @import '_variables.scss';
 
 .error-container {
-    margin: 113px 58px;
+    // margin: 113px 58px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 113px;
+    gap: 80px;
+    padding: 50px 20px;
     // width: 100%;
     &__nbr {
         @include errorNbr;
