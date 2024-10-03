@@ -3,12 +3,17 @@
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 30px 20px;
     &__main {
         @include mainTitleText;
         margin-top: 20px;
         margin-bottom: 80px;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     h1 {
         @include mainTitle;
@@ -37,5 +42,34 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
+    }
+}
+
+// RESPONSIVE
+@media screen and (min-width: 768px) {
+    .aboutContainer {
+        &__main {
+            // width: 100%;
+            // max-width: 700px;
+            text-align: center;
+            align-items: center;
+        }
+        &__text {
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutContainer {
+        align-items: center;
+
+        &__main {
+            width: 100%;
+            max-width: 700px;
+        }
     }
 }
