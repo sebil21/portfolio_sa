@@ -26,10 +26,11 @@
     }
     &__container {
         margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 50px;
+        width: 100%;
+        z-index: 1;
     }
     &__card {
         display: flex;
@@ -39,6 +40,7 @@
         padding: 10px;
         max-width: 350px;
         width: 100%;
+        border-radius: 8px;
     }
     &__subtitle {
         margin-bottom: 20px;
@@ -87,9 +89,19 @@
 // RESPONSIVE
 @media (min-width: 768px) {
     .skills {
-        &__card {
-            width: auto;
-            box-shadow: none;
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        // &__card {
+        //     box-shadow: none;
+        // }
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills {
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

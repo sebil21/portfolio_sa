@@ -8,10 +8,6 @@ const skills = [
         skills: ['React', 'API', 'JavaScript', 'GitHub'],
     },
     {
-        title: 'Référencement',
-        skills: ['SEO', 'Lighthouse', 'Search Console'],
-    },
-    {
         title: 'Gestion de projet',
         skills: [
             'Figma',
@@ -24,6 +20,11 @@ const skills = [
             'Formation ERP',
         ],
     },
+    {
+        title: 'Référencement',
+        skills: ['SEO', 'Lighthouse', 'Search Console'],
+    },
+
     {
         title: 'Domaine industriel',
         skills: ['Achats', 'Reporting'],
