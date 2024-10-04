@@ -91,10 +91,8 @@
     .skills {
         &__container {
             grid-template-columns: repeat(2, 1fr);
+            width: fit-content;
         }
-        // &__card {
-        //     box-shadow: none;
-        // }
     }
 }
 

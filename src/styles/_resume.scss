@@ -172,6 +172,7 @@
 
         img {
             width: 100px;
+            animation: rotate 7s linear infinite;
         }
     }
     .education {
@@ -185,4 +186,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+}
+@keyframes rotate {
+    from {
+        transform: rotatey(0deg); // Départ sans rotation
+    }
+    to {
+        transform: rotatey(360deg); // Fin en rotation complète
+    }
 }
