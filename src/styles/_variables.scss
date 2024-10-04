@@ -32,6 +32,9 @@ $dark-background-color: #dbccc1;
     font-weight: 400;
     letter-spacing: 3px;
     color: inherit;
+    @media (min-width: 768px) {
+        font-size: 0.75rem;
+    }
 }
 
 @mixin footerIcon {
@@ -48,7 +51,7 @@ $dark-background-color: #dbccc1;
     font-weight: 400;
     letter-spacing: 3px;
     line-height: 2;
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         // font-size: 1rem;
     }
 }
@@ -57,7 +60,7 @@ $dark-background-color: #dbccc1;
     font-weight: 700;
     font-style: italic;
     letter-spacing: 3px;
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         font-size: 1.2rem;
     }
 }
@@ -78,7 +81,7 @@ $dark-background-color: #dbccc1;
         font-weight: 700;
         font-size: 0.9rem;
     }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         font-size: 1rem;
     }
 }
@@ -95,7 +98,7 @@ $dark-background-color: #dbccc1;
     font-weight: 500;
     letter-spacing: 3px;
     color: $secondary-color;
-    // @media (min-width: 769px) {
+    // @media (min-width: 768px) {
     //     font-size: 1.75rem;
     // }
 }
@@ -104,7 +107,7 @@ $dark-background-color: #dbccc1;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
-    // @media (min-width: 769px) {
+    // @media (min-width: 768px) {
     //     font-size: 1.2rem;
     // }
 }
@@ -113,7 +116,7 @@ $dark-background-color: #dbccc1;
     font-size: 0.9rem;
     font-weight: 400;
     // letter-spacing: 3px;
-    // @media (min-width: 769px) {
+    // @media (min-width: 768px) {
     //     font-size: 1rem;
     // }
 }
@@ -126,7 +129,7 @@ $dark-background-color: #dbccc1;
     text-decoration: none;
     border-radius: 25px;
     padding: 10px 30px;
-    // @media (min-width: 769px) {
+    // @media (min-width: 768px) {
     //     font-size: 1.75rem;
     // }
 }

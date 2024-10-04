@@ -23,14 +23,14 @@
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%; //mettre width none en media query
+        width: 100%;
         z-index: 10;
         overflow: hidden;
         transition: max-height 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
         max-height: 0;
         background-color: $light-background-color;
         &.open {
-            max-height: 500px;
+            max-height: 250px;
             box-shadow: 0px 16px 15px -3px #dfd3ca;
         }
     }
@@ -59,6 +59,9 @@
 // RESPONSIVE
 
 @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
     .header {
         &__hamburger {
             display: none;
@@ -67,15 +70,20 @@
             position: static;
             max-height: none;
             box-shadow: none;
-            display: flex;
+            padding-left: 20px;
+            background-color: none;
         }
         &__navbar {
+            display: flex;
             flex-direction: row;
-            width: auto; // Pour qu'il prenne l'espace nécessaire
-            justify-content: space-around;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+        a {
+            height: none;
+            padding: none;
+            border-radius: 4px;
         }
     }
-}
-
-@media screen and (min-width: 1024px) {
 }
