@@ -158,32 +158,52 @@ $dark-background-color: #dbccc1;
         font-size: 0.9rem;
     }
 }
-
+@mixin skillsDescription {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    span {
+        font-style: italic;
+        font-weight: 700;
+    }
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+}
 @mixin resumeName {
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 3px;
     color: $secondary-color;
     text-transform: uppercase;
+    @media (min-width: 1024px) {
+        font-size: 1.2rem;
+    }
 }
 @mixin resumeInfo {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 400;
     letter-spacing: 3px;
+    @media (min-width: 1024px) {
+        font-size: 0.95rem;
+    }
 }
 
 @mixin resumeJobTitle {
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 3px;
+    @media (min-width: 1024px) {
+        font-size: 1rem;
+    }
 }
 
 @mixin resumeCVText {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 400;
     letter-spacing: 3px;
-    @media (min-width: 769px) {
-        font-size: 0.9rem;
+    @media (min-width: 768px) {
+        font-size: 1rem;
     }
 }
 
@@ -198,17 +218,26 @@ $dark-background-color: #dbccc1;
     font-size: 0.7rem;
     font-weight: 500;
     letter-spacing: 3px;
+    @media (min-width: 1024px) {
+        font-size: 0.85rem;
+    }
 }
-
+// Formulaire
 @mixin formLabel {
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
+    @media (min-width: 1024px) {
+        font-size: 0.9em;
+    }
 }
 
 @mixin formInputText {
     font-size: 0.8rem;
     font-weight: 400;
+    @media (min-width: 1024px) {
+        font-size: 0.95rem;
+    }
 }
 
 @mixin formButton {
@@ -222,8 +251,11 @@ $dark-background-color: #dbccc1;
     font-size: 0.75rem;
     font-weight: 400;
     letter-spacing: 3px;
+    @media (min-width: 1024px) {
+        font-size: 0.95rem;
+    }
 }
-
+//Page 404
 @mixin errorNbr {
     font-size: 6rem;
     font-weight: 700;

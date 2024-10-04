@@ -31,6 +31,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         gap: 50px;
+        align-items: center;
 
         & li {
             list-style: none;
@@ -193,5 +194,13 @@
     }
     to {
         transform: rotatey(360deg); // Fin en rotation complète
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .resume {
+        &__transitionCV {
+            width: 80%;
+        }
     }
 }

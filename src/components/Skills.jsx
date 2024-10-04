@@ -1,10 +1,12 @@
 import '../styles/_skills.scss';
 import skills from '../data/SkillsList';
+import Slide from './Slide';
 
 export default function Skills() {
     return (
         <div id="skills" className="skills">
             <h2 className="skills__title">COMPÉTENCES</h2>
+            <Slide />
             <div className="skills__container">
                 {skills.map((category, index) => (
                     <div key={index} className="skills__card">

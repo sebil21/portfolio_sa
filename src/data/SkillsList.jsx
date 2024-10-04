@@ -1,11 +1,11 @@
 const skills = [
     {
         title: 'Développement Web',
-        skills: ['HTML5', 'CSS', 'SASS', 'Mobile First'],
+        skills: ['HTML5', 'CSS3', 'SASS', 'Mobile First'],
     },
     {
         title: 'Développement',
-        skills: ['React', 'API', 'JavaScript', 'GitHub'],
+        skills: ['ReactJS', 'API', 'JavaScript', 'GitHub'],
     },
     {
         title: 'Gestion de projet',
@@ -13,7 +13,6 @@ const skills = [
             'Figma',
             'Spéc techniques',
             'Kanban',
-            'SASS',
             'Veille',
             'SAP S/4Hana',
             'Infor M3',

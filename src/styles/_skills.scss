@@ -55,6 +55,7 @@
         gap: 10px;
     }
     &__description {
+        @include skillsDescription;
         margin-top: 50px;
         padding: 30px;
         background: linear-gradient(
@@ -100,6 +101,9 @@
     .skills {
         &__container {
             grid-template-columns: repeat(3, 1fr);
+        }
+        &__description {
+            width: 80%;
         }
     }
 }
