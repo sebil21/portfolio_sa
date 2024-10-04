@@ -17,7 +17,11 @@ export default function Resume() {
                 {sortedResume.map((job, index) => (
                     <div key={index} className="resume__card">
                         <div>
-                            <img src={job.cover} alt={job.companyName} />
+                            <img
+                                src={job.cover}
+                                loading="lazy"
+                                alt={job.companyName}
+                            />
                         </div>
                         <div>
                             <h3 className="resume__companyName">

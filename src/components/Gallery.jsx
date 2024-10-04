@@ -25,6 +25,7 @@ export default function Gallery() {
                     <div key={project.title} className="gallery__card">
                         <img
                             src={project.cover}
+                            loading="lazy"
                             alt={project.title}
                             className="gallery__cover"
                         />

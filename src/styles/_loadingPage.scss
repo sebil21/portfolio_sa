@@ -12,7 +12,7 @@
     background-color: $dark-background-color;
     z-index: 9999;
     opacity: 1;
-    animation: fadeOut 3s forwards 3s;
+    animation: fadeOut 1.2s forwards 3s;
 
     p {
         @include loadingPage;

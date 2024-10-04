@@ -28,6 +28,7 @@ export default function Slide() {
                     <img
                         key={index}
                         className="skills-slide__card"
+                        loading="lazy"
                         src={image.src}
                         alt={image.alt}
                     />
