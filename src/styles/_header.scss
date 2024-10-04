@@ -58,7 +58,7 @@
 
 // RESPONSIVE
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .header {
         &__hamburger {
             display: none;
@@ -75,4 +75,7 @@
             justify-content: space-around;
         }
     }
+}
+
+@media screen and (min-width: 1024px) {
 }

@@ -71,7 +71,7 @@
         justify-content: center;
 
         &:hover {
-            background-color: lighten($primary-color, 5%);
+            background-color: lighten($primary-color, 15%);
         }
     }
     &__feedback {
