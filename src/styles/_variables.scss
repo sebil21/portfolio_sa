@@ -158,6 +158,17 @@ $dark-background-color: #dbccc1;
         font-size: 0.9rem;
     }
 }
+
+@mixin skillsSubtitle {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: $primary-color;
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
 @mixin skillsDescription {
     font-size: 0.85rem;
     font-weight: 400;

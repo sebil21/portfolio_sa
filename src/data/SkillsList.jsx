@@ -1,14 +1,14 @@
 const skills = [
     {
-        title: 'Développement Web',
+        title: 'DEVELOPPEMENT WEB',
         skills: ['HTML5', 'CSS3', 'SASS', 'Mobile First'],
     },
     {
-        title: 'Développement',
+        title: 'DEVELOPPEMENT',
         skills: ['ReactJS', 'API', 'JavaScript', 'GitHub'],
     },
     {
-        title: 'Gestion de projet',
+        title: 'GESTION DE PROJET',
         skills: [
             'Figma',
             'Spéc techniques',
@@ -20,13 +20,18 @@ const skills = [
         ],
     },
     {
-        title: 'Référencement',
-        skills: ['SEO', 'Lighthouse', 'Search Console'],
+        title: 'REFERENCEMENT',
+        skills: ['SEO', 'Lighthouse', 'Search Console', 'Wave'],
     },
 
     {
-        title: 'Domaine industriel',
-        skills: ['Achats', 'Reporting'],
+        title: 'PERFORMANCE ACHATS',
+        skills: [
+            'Achats',
+            'Reporting',
+            "Appels d'offres",
+            'Suivi fournisseurs',
+        ],
     },
 ];
 
