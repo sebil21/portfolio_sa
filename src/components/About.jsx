@@ -18,8 +18,9 @@ export default function About() {
                     </section>
                     <section>
                         Passionnée par l'apprentissage continu, je me suis
-                        récemment lancée dans le <span>développement web</span>{' '}
-                        pour allier créativité et logique.
+                        récemment lancée dans le <span>développement web</span>,
+                        un domaine qui me permet de fusionner créativité et
+                        innovation tout en maîtrisant les aspects techniques.
                     </section>
                     <section>
                         Je suis toujours prête à relever de{' '}
