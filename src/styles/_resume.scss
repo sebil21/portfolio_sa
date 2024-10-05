@@ -113,11 +113,12 @@
 // EDUCATION
 
 .education {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     gap: 30px;
     &__title {
         margin-bottom: 20px;

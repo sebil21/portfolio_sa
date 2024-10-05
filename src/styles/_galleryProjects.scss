@@ -6,10 +6,10 @@
     align-items: center;
     gap: 30px;
     background-color: $dark-background-color;
-    margin-top: 80px;
+    // margin-top: 80px;
     border-radius: 30px;
     padding: 20px;
-
+    margin: auto;
     &__title {
         @include title;
         position: relative;
@@ -104,6 +104,7 @@
 
 @media screen and (min-width: 1024px) {
     .gallery {
+        width: 80%;
         &__cardsContain {
             grid-template-columns: repeat(3, 1fr);
         }

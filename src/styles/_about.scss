@@ -5,6 +5,7 @@
     flex-direction: column;
     // flex-wrap: wrap;
     padding: 30px 20px;
+    margin-bottom: 100px;
     &__main {
         @include mainTitleText;
         margin-top: 20px;
@@ -14,6 +15,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
     h1 {
         @include mainTitle;
