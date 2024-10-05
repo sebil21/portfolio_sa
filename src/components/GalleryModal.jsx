@@ -26,13 +26,24 @@ export default function GalleryModal({ selectedProject, setSelectedProject }) {
                     <p>{selectedProject.info}</p>
                 </section>
                 <section className="modalLinkButton">
-                    <a
-                        href={selectedProject.lien}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Lien projet
-                    </a>
+                    {selectedProject.site && (
+                        <a
+                            href={selectedProject.site}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="fa-solid fa-globe"></i>
+                        </a>
+                    )}
+                    {selectedProject.lien && (
+                        <a
+                            href={selectedProject.lien}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i className="fa-brands fa-github"></i>
+                        </a>
+                    )}
                 </section>
             </div>
         </div>

@@ -52,14 +52,17 @@
     }
     .modalLinkButton {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         a {
             background-color: $primary-color;
             @include modalLink;
-
             &:hover {
                 background-color: lighten($primary-color, 7%);
             }
+        }
+        i {
+            font-size: 1.4rem;
+            color: $tertiary-color;
         }
     }
 }
