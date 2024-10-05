@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function Filter({ setCategory }) {
     const [isOpen, setIsOpen] = useState(false);
 
-    const categories = ['All', 'React', 'HTML', 'Gestion projet'];
+    const categories = ['All', 'HTML', 'React', 'API', 'Gestion projet'];
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);

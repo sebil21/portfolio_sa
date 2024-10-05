@@ -40,7 +40,7 @@ const galleryProjects = [
         ],
         info: "Implémenter le front-end d'une application bancaire avec React en mettant en place le state global avec Redux et la connexion utilisateur, la possibilité de modifier le userName du client via un formulaire et écrire les différents endpoint dans Swagger pour les opérations de transaction.",
         lien: 'https://github.com/sebil21/argentBank_react.git',
-        category: 'React',
+        category: 'API',
     },
     {
         cover: coverbooki,
@@ -137,7 +137,7 @@ const galleryProjects = [
         description: ['HTML', 'CSS', 'JavaScript', 'API'],
         info: "Créer une page web dynamique avec JavaScript pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API, ainsi que la gestion des événements utilisateurs et la manipulation des éléments du DOM avec JavaScript.",
         lien: 'https://github.com/sebil21/sophie_bluel_architecte.git',
-        category: 'HTML',
+        category: 'API',
     },
 ];
 
