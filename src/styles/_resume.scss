@@ -173,7 +173,7 @@
 
         img {
             width: 100px;
-            animation: rotate 7s linear infinite;
+            // animation: rotate 7s linear infinite;
         }
     }
     .education {
@@ -190,10 +190,10 @@
 }
 @keyframes rotate {
     from {
-        transform: rotatey(0deg); // Départ sans rotation
+        transform: rotatey(0deg);
     }
     to {
-        transform: rotatey(360deg); // Fin en rotation complète
+        transform: rotatey(360deg);
     }
 }
 
