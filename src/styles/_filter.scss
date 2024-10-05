@@ -37,6 +37,9 @@
             max-height: 200px;
             box-shadow: 0px 16px 15px -3px #dfd3ca;
         }
+        & li {
+            color: inherit;
+        }
     }
     &__category {
         background: $light-background-color;
