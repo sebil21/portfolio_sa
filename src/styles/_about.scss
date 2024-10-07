@@ -6,6 +6,7 @@
     padding: 100px 20px;
     margin-bottom: 100px;
     position: relative;
+    align-items: center;
     &__description {
         display: flex;
         flex-direction: column;
@@ -66,7 +67,7 @@
         &__description {
             flex-direction: row;
             align-items: flex-start;
-            gap: 50px;
+            gap: 80px;
         }
         &__text {
             width: 100%;
@@ -79,9 +80,7 @@
     .aboutContainer {
         padding-top: 100px;
         align-items: center;
-
         &__description {
-            width: 80%;
             justify-content: space-between;
         }
         &__text {
