@@ -12,17 +12,12 @@
     align-items: center;
     z-index: 1000;
     &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: space-evenly;
         background-color: $light-background-color;
         padding: 20px;
         margin: 20px;
         border-radius: 8px;
-        width: 100%;
-        max-width: 340px;
-        height: 550px;
+        width: 350px;
+        max-height: 95%;
         overflow: auto;
         position: relative;
         h4 {
@@ -38,7 +33,9 @@
         font-size: 1.75rem;
     }
     .modalText {
-        border-top: 1px solid $pink-color;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        border-top: 2px solid $pink-color;
         h5 {
             @include modalSubtitle;
             text-align: center;
@@ -67,7 +64,4 @@
             color: $tertiary-color;
         }
     }
-}
-
-@media screen and (min-width: 1024px) {
 }
