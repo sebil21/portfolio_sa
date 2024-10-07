@@ -23,8 +23,8 @@
             content: '';
             display: block;
             width: 80px;
-            height: 2px;
-            background-color: $primary-color;
+            height: 1px;
+            background-color: $pink-color;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -80,6 +80,8 @@
     .aboutContainer {
         padding-top: 100px;
         align-items: center;
+        width: 80%;
+        margin: 0 auto;
         &__description {
             justify-content: space-between;
         }

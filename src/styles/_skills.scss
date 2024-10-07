@@ -16,8 +16,8 @@
             content: '';
             display: block;
             width: 80px;
-            height: 2px;
-            background-color: $primary-color;
+            height: 1px;
+            background-color: $pink-color;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -40,6 +40,7 @@
         padding: 3px;
         max-width: 350px;
         width: 100%;
+        // border: 2px solid $pink-color;
         border-radius: 8px;
     }
     &__subtitle {
@@ -51,6 +52,7 @@
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         background-color: $primary-color;
+        border-bottom: 3px solid $pink-color;
     }
     &__list {
         padding: 10px;
@@ -94,6 +96,12 @@
 
 @media screen and (min-width: 1024px) {
     .skills {
+        &__card {
+            cursor: pointer;
+            &:hover {
+                background-color: rgba($dark-background-color, 0.4);
+            }
+        }
         &__container {
             grid-template-columns: repeat(3, 1fr);
         }

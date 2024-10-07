@@ -18,11 +18,13 @@
         border-radius: 8px;
         width: 350px;
         max-height: 95%;
+        height: 580px;
         overflow: auto;
         position: relative;
         h4 {
             @include modalTitle;
             text-align: center;
+            padding-bottom: 15px;
         }
     }
     .fa-xmark {
@@ -34,8 +36,8 @@
     }
     .modalText {
         padding-top: 15px;
-        padding-bottom: 30px;
-        border-top: 2px solid $secondary-color;
+        padding-bottom: 70px;
+        border-top: 1px solid $pink-color;
         h5 {
             @include modalSubtitle;
             text-align: center;
@@ -62,6 +64,15 @@
         i {
             font-size: 1.4rem;
             color: $tertiary-color;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .modal {
+        &__content {
+            width: 400px;
+            height: auto;
         }
     }
 }

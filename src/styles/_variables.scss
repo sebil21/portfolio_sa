@@ -116,15 +116,24 @@ $dark-background-color: #7c6a80;
     font-weight: 500;
     letter-spacing: 3px;
     color: $secondary-color;
+    @media (min-width: 1024px) {
+        font-size: 1.7rem;
+    }
 }
 @mixin modalSubtitle {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
+    @media (min-width: 1024px) {
+        font-size: 1.5rem;
+    }
 }
 @mixin modalText {
     font-size: 0.9rem;
     font-weight: 400;
+    @media (min-width: 1024px) {
+        font-size: 1rem;
+    }
 }
 @mixin modalLink {
     border-radius: 10px;

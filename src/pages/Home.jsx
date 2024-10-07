@@ -4,6 +4,7 @@ import Gallery from '../components/Gallery';
 import Skills from '../components/Skills';
 import Resume from '../components/Resume';
 import Form from '../components/Form';
+import BackToTop from '../components/BackToTop';
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Skills />
             <Resume />
             <Form />
+            <BackToTop />
         </div>
     );
 }
