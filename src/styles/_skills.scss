@@ -28,9 +28,12 @@
         margin-top: 20px;
         display: grid;
         grid-template-columns: 1fr;
+        justify-items: center;
         gap: 50px;
         width: 100%;
+        max-width: 1440px;
         z-index: 1;
+        align-items: stretch;
     }
     &__card {
         display: flex;
@@ -40,8 +43,9 @@
         padding: 3px;
         max-width: 350px;
         width: 100%;
-        // border: 2px solid $pink-color;
         border-radius: 8px;
+        min-height: 250px;
+        flex: 1;
     }
     &__subtitle {
         padding: 10px;
@@ -89,21 +93,16 @@
     .skills {
         &__container {
             grid-template-columns: repeat(2, 1fr);
-            width: fit-content;
+            width: 100%;
         }
     }
 }
 
 @media screen and (min-width: 1024px) {
     .skills {
-        &__card {
-            cursor: pointer;
-            &:hover {
-                background-color: rgba($dark-background-color, 0.4);
-            }
-        }
         &__container {
             grid-template-columns: repeat(3, 1fr);
+            width: 80%;
         }
         &__description {
             width: 80%;
