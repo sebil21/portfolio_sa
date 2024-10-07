@@ -12,19 +12,25 @@
     align-items: center;
     z-index: 1000;
     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         background-color: $light-background-color;
         padding: 20px;
         margin: 20px;
         border-radius: 8px;
-        width: 350px;
-        max-height: 95%;
-        height: 580px;
+        // width: 350px;
+        // max-height: 95%;
+        // height: 580px;
+        width: 100%;
+        max-width: 400px;
+        height: 550px;
         overflow: auto;
         position: relative;
         h4 {
             @include modalTitle;
             text-align: center;
-            padding-bottom: 15px;
+            // padding-bottom: 15px;
         }
     }
     .fa-xmark {
@@ -35,8 +41,8 @@
         font-size: 1.75rem;
     }
     .modalText {
-        padding-top: 15px;
-        padding-bottom: 70px;
+        // padding-top: 15px;
+        // padding-bottom: 70px;
         border-top: 1px solid $pink-color;
         h5 {
             @include modalSubtitle;
@@ -69,10 +75,10 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .modal {
-        &__content {
-            width: 400px;
-            height: auto;
-        }
-    }
+    // .modal {
+    //     &__content {
+    //         width: 400px;
+    //         height: auto;
+    //     }
+    // }
 }
