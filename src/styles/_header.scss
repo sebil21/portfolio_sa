@@ -31,7 +31,7 @@
         background-color: $light-background-color;
         &.open {
             max-height: 250px;
-            box-shadow: 0px 16px 15px -3px #dfd3ca;
+            box-shadow: 0 7px 9px #dfd3ca;
         }
     }
     &__navbar {
@@ -51,13 +51,13 @@
         @include navBar;
         transition: all 0.6s ease;
         &:hover {
-            background-color: $dark-background-color;
+            background-color: $secondary-color;
+            color: $tertiary-color;
         }
     }
 }
 
 // RESPONSIVE
-
 @media screen and (min-width: 768px) {
 }
 
@@ -72,6 +72,9 @@
             box-shadow: none;
             padding-left: 20px;
             background-color: none;
+            &.open {
+                box-shadow: none;
+            }
         }
         &__navbar {
             display: flex;

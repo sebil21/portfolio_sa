@@ -6,14 +6,12 @@
     flex-wrap: wrap;
     padding: 60px 20px;
     align-items: center;
-
     &__title {
         @include title;
         position: relative;
         z-index: 1;
         padding-bottom: 30px;
         text-align: center;
-
         &::after {
             content: '';
             display: block;
@@ -26,7 +24,6 @@
             bottom: 0;
         }
     }
-
     &__container {
         display: flex;
         flex-direction: column;
@@ -34,7 +31,6 @@
         width: 100%;
         max-width: 400px;
     }
-
     &__label {
         @include formLabel;
         display: flex;

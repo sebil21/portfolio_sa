@@ -1,18 +1,21 @@
 import '../styles/_about.scss';
+import Profil from '../assets/images/profil.webp';
 
 export default function About() {
     return (
         <div className="aboutContainer">
-            <div className="aboutContainer__main">
-                Bienvenue sur mon portfolio, je suis <h1>Sebil</h1>, intégrateur
-                web junior. C'est ici que je vous parle de mon parcours..
-            </div>
+            <h2 className="aboutContainer__title">PRÉSENTATION</h2>
             <div id="about" className="aboutContainer__description">
-                <h2 className="aboutContainer__title">PRÉSENTATION</h2>
                 <div className="aboutContainer__text">
                     <section>
-                        Avec <span>15 ans d'expérience professionnelle</span>,
-                        j'ai débuté ma carrière en tant qu'
+                        Je suis intégrateur web junior et c'est ici que je vous
+                        parle de mon parcours.
+                    </section>
+                    <section>
+                        Forte de{' '}
+                        <span>15 ans d'expérience professionnelle</span>, j'ai
+                        exploré différents domaines avant de m'orienter, dès
+                        2015, vers une carrière en tant qu'
                         <span>acheteuse</span>, où j'ai développé mes
                         compétences de manière autodidacte.
                     </section>
@@ -27,6 +30,13 @@ export default function About() {
                         <span>nouveaux défis</span> et à explorer des
                         opportunités de collaboration.
                     </section>
+                </div>
+                <div className="aboutContainer__imageWrapper">
+                    <img
+                        src={Profil}
+                        loading="lazy"
+                        alt="Profil de l'administrateur"
+                    />
                 </div>
             </div>
         </div>

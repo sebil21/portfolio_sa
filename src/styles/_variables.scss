@@ -1,66 +1,80 @@
 // VARIABLES
 $primary-color: #2c2c43;
-$secondary-color: #978370;
+$secondary-color: #69556d;
 $tertiary-color: #fffbf7;
+$pink-color: #e343ff;
 $light-background-color: #fffbf7;
-$dark-background-color: #dbccc1;
+$dark-background-color: #7c6a80;
 
 // MIXINS
 @mixin loadingPage {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 3px;
-    @media (min-width: 769px) {
-        font-size: 1.5rem;
+    color: $tertiary-color;
+    span {
+        color: $pink-color;
+    }
+    @media (min-width: 768px) {
+        font-size: 2rem;
     }
 }
-// @mixin headerTitle {
-//     font-size: 0.75rem;
-//     font-weight: 300;
-//     letter-spacing: 3px;
-//     @media (min-width: 769px) {
-//         font-size: 1rem;
-//     }
-// }
-
 @mixin menuBurger {
     font-size: 1.7rem;
 }
-
 @mixin navBar {
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
     color: inherit;
-    @media (min-width: 768px) {
-        font-size: 0.75rem;
+    @media (min-width: 1024px) {
+        font-size: 0.875rem;
     }
 }
-
 @mixin footerIcon {
     font-size: 1.9rem;
-    color: $primary-color;
+    color: $tertiary-color;
 }
-
 @mixin footerText {
-    font-size: 0.6rem;
-    letter-spacing: 3px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
     font-weight: 500;
+    color: $tertiary-color;
     @media (min-width: 768px) {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         font-weight: 500;
         letter-spacing: 3px;
     }
 }
-
+@mixin bannerText {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: $tertiary-color;
+    @media (min-width: 768px) {
+        font-size: 1.225rem;
+    }
+    @media (min-width: 1024px) {
+        font-size: 1.9rem;
+    }
+}
+@mixin bannerSecondText {
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: $tertiary-color;
+    @media (min-width: 768px) {
+        font-size: 1.225rem;
+    }
+    @media (min-width: 1024px) {
+        font-size: 1.9rem;
+    }
+}
 @mixin mainTitleText {
     font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 3px;
     line-height: 2;
-    @media (min-width: 768px) {
-        // font-size: 1rem;
-    }
 }
 @mixin mainTitle {
     font-size: 1rem;
@@ -70,17 +84,12 @@ $dark-background-color: #dbccc1;
     @media (min-width: 768px) {
         font-size: 1.2rem;
     }
-    @media (min-width: 1024px) {
-        // font-size: 1.2rem;
-    }
 }
-
 @mixin title {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 3px;
 }
-
 @mixin aboutText {
     font-size: 0.8rem;
     font-weight: 400;
@@ -90,60 +99,37 @@ $dark-background-color: #dbccc1;
         font-style: italic;
         font-weight: 700;
         font-size: 0.9rem;
+        // color: $pink-color;
     }
     @media (min-width: 768px) {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
-
 @mixin cardTitle {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
     color: $tertiary-color;
 }
-
 @mixin modalTitle {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 3px;
     color: $secondary-color;
-    // @media (min-width: 768px) {
-    //     font-size: 1.75rem;
-    // }
 }
-
 @mixin modalSubtitle {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
-    // @media (min-width: 768px) {
-    //     font-size: 1.2rem;
-    // }
 }
-
 @mixin modalText {
     font-size: 0.9rem;
     font-weight: 400;
-    // letter-spacing: 3px;
-    // @media (min-width: 768px) {
-    //     font-size: 1rem;
-    // }
 }
-
 @mixin modalLink {
-    // font-size: 1.8rem;
-    // font-weight: 400;
-    // letter-spacing: 3px;
-    // color: $tertiary-color;
-    // text-decoration: none;
     border-radius: 10px;
     padding: 15px 20px;
-    // @media (min-width: 768px) {
-    //     font-size: 1.75rem;
-    // }
 }
-
 @mixin filterButton {
     font-size: 1rem;
     font-weight: 400;
@@ -151,16 +137,14 @@ $dark-background-color: #dbccc1;
     background-color: $primary-color;
     color: $tertiary-color;
 }
-
 @mixin filterCategory {
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 3px;
 }
-
 @mixin skills {
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 3px;
     span {
         font-style: italic;
@@ -168,17 +152,15 @@ $dark-background-color: #dbccc1;
         font-size: 0.9rem;
     }
 }
-
 @mixin skillsSubtitle {
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 3px;
-    color: $primary-color;
+    color: $tertiary-color;
     @media (min-width: 768px) {
         font-size: 1rem;
     }
 }
-
 @mixin skillsDescription {
     font-size: 0.85rem;
     font-weight: 400;
@@ -188,7 +170,8 @@ $dark-background-color: #dbccc1;
         font-weight: 700;
     }
     @media (min-width: 768px) {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        text-align: justify;
     }
 }
 @mixin resumeName {
@@ -209,7 +192,6 @@ $dark-background-color: #dbccc1;
         font-size: 0.95rem;
     }
 }
-
 @mixin resumeJobTitle {
     font-size: 0.8rem;
     font-weight: 500;
@@ -218,23 +200,21 @@ $dark-background-color: #dbccc1;
         font-size: 1rem;
     }
 }
-
 @mixin resumeCVText {
     font-size: 0.85rem;
     font-weight: 400;
     letter-spacing: 3px;
     @media (min-width: 768px) {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        text-align: justify;
     }
 }
-
 @mixin resumeButtonCV {
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 3px;
     color: $tertiary-color;
 }
-
 @mixin educationLocation {
     font-size: 0.7rem;
     font-weight: 500;
@@ -252,7 +232,6 @@ $dark-background-color: #dbccc1;
         font-size: 0.9em;
     }
 }
-
 @mixin formInputText {
     font-size: 0.8rem;
     font-weight: 400;
@@ -260,14 +239,12 @@ $dark-background-color: #dbccc1;
         font-size: 0.95rem;
     }
 }
-
 @mixin formButton {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 3px;
     color: $tertiary-color;
 }
-
 @mixin formErrorSuccessMsg {
     font-size: 0.75rem;
     font-weight: 400;
@@ -283,18 +260,67 @@ $dark-background-color: #dbccc1;
     letter-spacing: 3px;
     color: $secondary-color;
 }
-
 @mixin errorText {
     font-size: 1.2rem;
     font-weight: 500;
     color: $secondary-color;
     letter-spacing: 3px;
 }
-
 @mixin errorLink {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 3px;
     color: inherit;
     color: $secondary-color;
+}
+
+//Animation loadingPage
+@keyframes slideInThenOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+//Slide
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+// Animation resume et skills
+@keyframes rotate-border {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

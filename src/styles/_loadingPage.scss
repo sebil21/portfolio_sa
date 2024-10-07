@@ -9,42 +9,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $dark-background-color;
+    background: rgb(44, 44, 67);
+    background: linear-gradient(
+        135deg,
+        rgba(44, 44, 67, 1) 0%,
+        rgba(105, 85, 109, 1) 70%,
+        rgba(123, 75, 179, 1) 100%
+    );
     z-index: 9999;
     opacity: 1;
     animation: fadeOut 1.2s forwards 3s;
-
     p {
         @include loadingPage;
         position: relative;
         opacity: 0;
-        animation: slideInThenOut 3s ease-in-out;
-        background-color: $dark-background-color;
-    }
-}
-
-@keyframes slideInThenOut {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    40% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        visibility: visible;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
+        animation: slideInThenOut 3s ease-in-out forwards;
     }
 }

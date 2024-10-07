@@ -20,7 +20,6 @@ export default function GalleryModal({ selectedProject, setSelectedProject }) {
                         ))}
                     </ul>
                 </section>
-
                 <section className="modalText">
                     <h5>Objectifs</h5>
                     <p>{selectedProject.info}</p>

@@ -6,7 +6,6 @@ export default function Footer() {
         <>
             <img className="footerImg" src={FooterImg} alt="mandala" />
             <footer className="footer">
-                <p>Retrouvez-moi sur ces plateformes</p>
                 <div className="footer__icons">
                     <a
                         href="mailto:s.alagoz@outlook.fr"
