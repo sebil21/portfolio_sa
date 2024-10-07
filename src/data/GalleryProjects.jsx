@@ -9,6 +9,7 @@ import coverprintit from '../assets/images/printit.webp';
 import coverqwenta from '../assets/images/qwenta.webp';
 import coverridingcities from '../assets/images/ridingcities.webp';
 import coversophiebluel from '../assets/images/sophiebluel.webp';
+import coverrobbielens from '../assets/images/robbielens.webp';
 
 const galleryProjects = [
     {
@@ -138,6 +139,16 @@ const galleryProjects = [
         info: "Créer une page web dynamique avec JavaScript pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API, ainsi que la gestion des événements utilisateurs et la manipulation des éléments du DOM avec JavaScript.",
         lien: 'https://github.com/sebil21/sophie_bluel_architecte.git',
         category: 'API',
+    },
+    {
+        cover: coverrobbielens,
+        title: 'Robbie Lens',
+        date: '2024-01-01',
+        description: ['HTML', 'CSS', 'Responsive'],
+        info: "Démarrer l'apprentisage d'Html et de CSS avec le site d'un photographe.",
+        site: 'https://sa-robbie-lens.netlify.app/',
+        lien: 'https://https://github.com/sebil21/robbieLens.git',
+        category: 'HTML',
     },
 ];
 
