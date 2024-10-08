@@ -63,7 +63,7 @@ export default function Form() {
         <div id="contact" className="form">
             <h2 className="form__title">CONTACT</h2>
             <form onSubmit={handleSubmit} className="form__container">
-                <label className="form__label">
+                <label className="form__label" htmlFor="name">
                     Nom
                     <input
                         type="text"
@@ -75,7 +75,7 @@ export default function Form() {
                         required
                     />
                 </label>
-                <label className="form__label">
+                <label className="form__label" htmlFor="email">
                     Email
                     <input
                         type="email"
@@ -87,7 +87,7 @@ export default function Form() {
                         required
                     />
                 </label>
-                <label className="form__label">
+                <label className="form__label" htmlFor="message">
                     Message
                     <textarea
                         value={message}
