@@ -67,6 +67,8 @@ export default function Form() {
                     Nom
                     <input
                         type="text"
+                        id="name"
+                        name="name"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         className="form__input"
@@ -77,6 +79,8 @@ export default function Form() {
                     Email
                     <input
                         type="email"
+                        id="email"
+                        name="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className="form__input"
@@ -87,6 +91,8 @@ export default function Form() {
                     Message
                     <textarea
                         value={message}
+                        id="message"
+                        name="message"
                         onChange={(e) => setMessage(e.target.value)}
                         className="form__textarea"
                         required
