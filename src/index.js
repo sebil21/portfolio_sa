@@ -13,8 +13,8 @@ const root = createRoot(rootElement);
 
 root.render(
     <React.StrictMode>
-        <LoadingPage />
         <Router>
+            <LoadingPage />
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
