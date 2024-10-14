@@ -1,5 +1,6 @@
 import '../styles/_about.scss';
 import Profil from '../assets/images/profil.webp';
+import ButtonCV from './Cv';
 
 export default function About() {
     return (
@@ -39,6 +40,7 @@ export default function About() {
                     />
                 </div>
             </div>
+            <ButtonCV />
         </div>
     );
 }

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 100px 20px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     position: relative;
     align-items: center;
     &__description {
@@ -17,7 +17,7 @@
         @include title;
         text-align: center;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         padding-bottom: 30px;
         &::after {
             content: '';
@@ -63,17 +63,6 @@
 
 // RESPONSIVE
 @media screen and (min-width: 768px) {
-    .aboutContainer {
-        &__description {
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 80px;
-        }
-        &__text {
-            width: 100%;
-            text-align: left;
-        }
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -83,7 +72,9 @@
         width: 80%;
         margin: 0 auto;
         &__description {
+            flex-direction: row;
             justify-content: space-between;
+            align-items: flex-start;
         }
         &__text {
             max-width: 750px;
