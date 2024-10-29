@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/_header.scss';
 import LogoHeader from '../assets/images/logoHeader.webp';
+// import { Link } from 'react-router-dom';
 
 export default function Header() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -16,11 +17,20 @@ export default function Header() {
     return (
         <header className="header">
             <div className="header__logo">
-                <img
-                    src={LogoHeader}
-                    alt="Logo Sebil Alagoz"
-                    className="header__logo-img"
-                />
+                {
+                    <img
+                        src={LogoHeader}
+                        alt="Logo Sebil Alagoz"
+                        className="header__logo-img"
+                    />
+                }
+                {/* <Link to="/">
+                    <img
+                        src={LogoHeader}
+                        alt="Logo Sebil Alagoz"
+                        className="header__logo-img"
+                    />
+                </Link> */}
             </div>
             <i
                 className={`header__hamburger fa-solid ${

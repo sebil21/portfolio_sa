@@ -4,7 +4,7 @@
     position: relative;
     display: inline-block;
     &__button {
-        @include filterButton;
+        @include Button;
         padding: 5px 15px;
         border: none;
         border-radius: 8px;

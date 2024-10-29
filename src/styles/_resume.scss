@@ -91,7 +91,7 @@
         background-color: $primary-color;
         cursor: pointer;
         color: $primary-color;
-        @include resumeButtonCV;
+        @include Button;
         transition: background-color 0.3s ease;
         &:hover {
             background-color: lighten($primary-color, 15%);
