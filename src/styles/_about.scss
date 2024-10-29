@@ -36,7 +36,7 @@
         @include aboutText;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         padding-bottom: 50px;
     }
     &__imageWrapper {
@@ -68,16 +68,18 @@
 
 @media screen and (min-width: 1024px) {
     .aboutContainer {
-        padding-top: 100px;
+        padding: 0;
         align-items: center;
         width: 80%;
-        margin: 0 auto;
+        margin: 100px auto;
         &__description {
+            width: 100%;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
         }
         &__text {
+            text-align: start;
             max-width: 750px;
         }
     }
