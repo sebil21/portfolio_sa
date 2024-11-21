@@ -5,7 +5,7 @@ const skills = [
     },
     {
         title: 'DEVELOPPEMENT',
-        skills: ['ReactJS', 'API', 'JavaScript', 'GitHub'],
+        skills: ['ReactJS', 'API', 'JavaScript', 'GitHub', 'SQL'],
     },
     {
         title: 'GESTION DE PROJET',
