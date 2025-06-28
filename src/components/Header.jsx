@@ -50,7 +50,7 @@ export default function Header() {
                             RÉALISATIONS
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="#skills" onClick={handleMenuItemClick}>
                             COMPÉTENCES
                         </a>
@@ -59,7 +59,7 @@ export default function Header() {
                         <a href="#resume" onClick={handleMenuItemClick}>
                             PARCOURS
                         </a>
-                    </li>
+                    </li> */}
                     <li>
                         <a href="#contact" onClick={handleMenuItemClick}>
                             CONTACT
