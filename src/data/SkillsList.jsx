@@ -1,7 +1,7 @@
 const skills = [
     {
         title: 'DEVELOPPEMENT WEB',
-        skills: ['HTML5', 'CSS3', 'SASS', 'Mobile First'],
+        skills: ['HTML5', 'CSS3', 'SASS', 'Mobile First', 'WordPress'],
     },
     {
         title: 'DEVELOPPEMENT',
