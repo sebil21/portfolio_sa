@@ -9,23 +9,23 @@ export default function About() {
             <div id="about" className="aboutContainer__description">
                 <div className="aboutContainer__text">
                     <section>
-                        Je suis intégrateur web junior et c'est ici que je vous
-                        parle de mon parcours.
+                        Intégratrice web junior, passionnée par la tech et le
+                        design, je mets ma rigueur et ma créativité au service
+                        de vos projets digitaux.
                     </section>
                     <section>
-                        Forte de{' '}
-                        <span>15 ans d'expérience professionnelle</span>, j'ai
-                        exploré différents domaines avant de m'orienter, dès
-                        2015, vers une carrière en tant qu'
-                        <span>acheteuse</span>, où j'ai développé mes
-                        compétences de manière autodidacte.
+                        <span>Curieuse et passionnée</span> par les
+                        technologies, je développe des projets web par envie
+                        d’apprendre, d’expérimenter et de donner vie à des
+                        idées. J'ai développé mes compétences de manière
+                        autodidacte.
                     </section>
-                    <section>
+                    {/* <section>
                         Passionnée par l'apprentissage continu, je me suis
                         récemment lancée dans le <span>développement web</span>,
                         un domaine qui me permet de fusionner créativité et
                         innovation tout en maîtrisant les aspects techniques.
-                    </section>
+                    </section> */}
                     <section>
                         Je suis toujours prête à relever de{' '}
                         <span>nouveaux défis</span> et à explorer des
@@ -40,7 +40,7 @@ export default function About() {
                     />
                 </div>
             </div>
-            <ButtonCV />
+            {/* <ButtonCV /> */}
         </div>
     );
 }
